@@ -3989,10 +3989,20 @@ base media type, `application/vc+ld+json`.
 
         <p>
 As elaborated upon in Section <a href="#json-processing"></a>, some software
-applications might not perform full JSON-LD processing.
-<a>Conforming document</a> authors are urged to not use JSON-LD keywords that
-affect document processing in the `@context` value, such as globally setting
-`@base` and `@language`, in order to increase interoperability.
+applications might not perform full JSON-LD processing. In order to increase
+interoperability, <a>conforming document</a> authors are urged to not use
+JSON-LD features that are not easily detected when not performing full
+JSON-LD processing. This guidance includes:
+        </p>
+
+        <ul>
+          <li>
+Not using JSON-LD keywords in the `@context` value that modify document
+processing, such as globally setting `@base` and `@language`, in order to
+increase interoperability.
+          </li>
+       </ul>
+
         </p>
 
         <section>
